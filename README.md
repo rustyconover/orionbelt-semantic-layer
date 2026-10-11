@@ -35,7 +35,7 @@ The same model serves every surface you already use. Four of them, and one model
 | Surface | Port | Speaks | Connect with |
 |---|---|---|---|
 | **PostgreSQL wire** | `5432` | Postgres protocol | [DuckDB](https://ralforion.com/orionbelt-semantic-layer/guide/duckdb/) via `ATTACH`, Tableau, [Dremio](https://ralforion.com/orionbelt-semantic-layer/guide/postgres-wire-bi-tools/#6-dremio-sql-runner-catalog-flip-calcite-quirks) as a federated source, Power BI, Superset, DBeaver, Metabase, `psql` |
-| **Arrow Flight SQL** | `8815` | gRPC + Arrow | [DuckDB](https://ralforion.com/orionbelt-semantic-layer/guide/duckdb/) via `adbc_scanner`, Tableau and Power BI through the Flight SQL JDBC/ODBC drivers, [ADBC](https://ralforion.com/orionbelt-semantic-layer/guide/adbc/) clients (Python, Go, Java) |
+| **Arrow Flight SQL** | `8815` | gRPC + Arrow | [DuckDB](https://ralforion.com/orionbelt-semantic-layer/guide/duckdb/) via [`adbc_scanner`](https://query.farm/products/extensions/adbc_scanner/), Tableau and Power BI through the Flight SQL JDBC/ODBC drivers, [ADBC](https://ralforion.com/orionbelt-semantic-layer/guide/adbc/) clients (Python, Go, Java) |
 | **REST** | `8000` | HTTP + JSON | your code, notebooks, `curl`, and the [8 PEP 249 drivers](https://ralforion.com/orionbelt-semantic-layer/drivers/) (which compile here, then execute on the warehouse directly) |
 | **MCP** | stdio / HTTP | Model Context Protocol | [AI agents](https://ralforion.com/agentic-ai-data-access.html): Claude, Cursor, Copilot, Windsurf |
 
